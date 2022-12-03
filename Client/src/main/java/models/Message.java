@@ -33,6 +33,14 @@ public class Message implements Comparable {
         this.toId = "";
     }
 
+    public Message(String message, String toId, String fromId, String timestamp, String seqId) { //Caro: loaded constructor
+        this.message = message;
+        this.toId = toId;
+        this.fromId = fromId;
+        this.timestamp = timestamp;
+        this.seqId = seqId;
+    }
+
     @Override
     public String toString() {
         return "to: " + this.toId + "\nfrom: "+ this.fromId + "\n" + this.message + "\n----\n";
@@ -70,7 +78,7 @@ public class Message implements Comparable {
         return timestamp;
     }
 
-    public String getSeqId() {
+    public String getSeqId() { //why just get?
         return seqId;
     }
 }
