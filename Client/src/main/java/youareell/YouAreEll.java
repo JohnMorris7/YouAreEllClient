@@ -10,6 +10,9 @@ public class YouAreEll {
         this.tt = t;
     }
 
+    public YouAreEll(MessageController messageController, IdController idController) {
+    } //Caro: created
+
     public static void main(String[] args) {
         // hmm: is this Dependency Injection?
         YouAreEll urlhandler = new YouAreEll(

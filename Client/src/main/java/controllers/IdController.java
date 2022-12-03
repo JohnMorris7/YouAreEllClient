@@ -6,7 +6,7 @@ import java.util.HashMap;
 import models.Id;
 
 public class IdController {
-    private HashMap<String, Id> allIds;
+    private HashMap<String, Id> allIds; //why is the key a string:
 
     Id myId;
 
